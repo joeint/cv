@@ -1,0 +1,37 @@
+[
+    {
+        "company": "Neuberger Berman",
+        "title": "Solutions Architect, VP",
+        "startDate": "2011",
+        "endDate": "Present",
+        "desc": "Architect for the enterprise data service organization. The division is a brand new organization unit within the firm. The EDS group is responsible to be the single version of truth for data. Responsible for setting new technology standards, code testing standards, and mentoring other groups to the new standards."
+    },
+    {
+        "company": "Neuberger Berman",
+        "title": "Technical Lead, AVP",
+        "startDate": "2008",
+        "endDate": "2011",
+        "desc": "Technical lead for the fixed income organization. Responsible for leading new application development initiatives and providing technical guidance for other projects to ensure effective implementation design plans."
+    },
+    {
+        "company": "Lehman Brothers",
+        "title": "Senior Developer",
+        "startDate": "2006",
+        "endDate": "2008",
+        "desc": "Senior developer for the fixed income order management system, reporting solutions and the supporting applications."
+    },
+    {
+        "company": "Northern Trust",
+        "title": "Senior Systems Analyst",
+        "startDate": "2005",
+        "endDate": "2006",
+        "desc": "Enhanced and maintained a pension payment on-line web system. The pension system was designed around a third party vendor, Lawson, but was completely revamped for Northern Trust specifics."
+    },
+    {
+        "company": "Caremark",
+        "title": "Programmer Analyst",
+        "startDate": "2002",
+        "endDate": "2005",
+        "desc": "Designed, developed and implemented a new Java web based drug health benefit system. The system was a conversion from an OS2 application. The benefit system allowed real time changes to the client’s health plans."
+    }
+]

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en" class="no-js"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en" class="no-js"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en" class="no-js"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>Joe Intrakamhang</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Joe Int's Site">
+    <meta name="author" content="Joe Intrakamhang">
+
+    <!-- CSS -->
+    <link href="styles/main.css" media="screen, projection" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57-precomposed.png">
+    <!--<link rel="shortcut icon" href="images/favicon.png">-->
+
+    <!-- Font Awesome -->
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body ng-app="joeintApp" ng-controller="MainCtrl" data-spy="scroll" data-target="#main-nav">
+<!-- WRAPPER -->
+<div class="wrapper">
+
+<!-- main navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" id="main-nav" role="navigation">
+    <div class="container">
+        <!-- brand and toggle -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- navigation links -->
+        <div class="collapse navbar-collapse main-nav-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#about-me">ABOUT ME</a></li>
+                <li><a href="#resume">RESUME</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact-me">CONTACT ME</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- end main navigation -->
+
+<!-- header -->
+<header class="jumbotron header" id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 left">
+                <div class="avatar">
+                    <img ng-src="images/{{profileImg}}" class="img-responsive" alt="Profile Picture" />
+                </div>
+            </div>
+            <div class="col-md-6 right">
+                <h1 class="hide">Joe I</h1>
+                <h2 class="heading">HELLO, I'M JOE</h2>
+                <p>A technologist <label>Geek</label> from Chicago. Want to know more about me?</p>
+                <a href="#about-me" class="btn btn-default btn-lg">READ MORE</a><a href="resume/Resume%20Joe%20Intrakamhang.pdf" class="btn btn-primary btn-lg" download>DOWNLOAD RESUME</a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+
+<!-- about-me -->
+<section class="section about-me" id="about-me">
+    <div class="container">
+        <h2 class="heading">ABOUT ME</h2>
+        <p>{{aboutMe.line1}}</p>
+        <p>{{aboutMe.line2}}</p>
+        <br>
+        <div class="social">
+            <h3 class="sub-heading">Follow me on:</h3>
+            <ul class="social-icons">
+                <li><a href="http://www.linkedin.com/pub/joe-intrakamhang/3/636/366" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- end about-me -->
+
+<!-- resume -->
+<section class="section resume" id="resume">
+    <div class="container">
+        <h2 class="heading">RESUME</h2>
+        <ul class="timeline">
+            <div class="history" ng-repeat="item in history">
+                <li class="year">{{item.endDate}}</li>
+                <li class="event" ng-class-even="'left-side'">
+                    <h3 class="company">{{item.company}}</h3>
+                    <h3 class="heading">{{item.title}}</h3>
+                    <span class="month"><i class="icon icon-calendar"></i>{{item.startDate}} - {{item.endDate}}</span>
+                    <p>{{item.desc}}</p>
+                </li>
+            </div>
+        </ul>
+
+    </div>
+</section>
+<!-- end resume -->
+
+<!-- projects -->
+<section class="section projects" id="projects">
+    <div class="container">
+        <h2 class="heading">PROJECTS</h2>
+        <p>{{project.overallDesc}}</p>
+        <div class="row interest">
+            <div class="col-md-3" ng-repeat="item in project.projects">
+                <h3 class="sub-heading"><i class="fa {{item.icon}} fa-lg"></i> {{item.iconDesc}}</h3>
+                <p>{{item.projectDesc}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end projects -->
+
+<!-- contacts -->
+<section class="section contacts" id="contact-me">
+    <div class="container">
+        <h2 class="heading">CONTACT ME</h2>
+        <a href="mailto:joe@joeint.com"><h3 class="heading">Click me to email me</h3></a>
+        <h4 class="heading">joe@joeint.com</h4>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="footer">
+    <p>Copyright {{currentYear}} Joe Intrakamhang. All Rights Reserved.</p>
+</footer>
+<!-- end footer -->
+
+</div>
+<!-- END WRAPPER -->
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/modernizr/modernizr.js"></script>
+<script src="bower_components/sass-bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/jquery.scrollTo/jquery.scrollTo.js"></script>
+<script src="bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+<script src="bower_components/jquery.localScroll/jquery.localScroll.js"></script>
+<script src="bower_components/jquery.localScroll/jquery.localScroll.min.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/main.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<!-- endbuild -->
+
+
+</body>
+</html>

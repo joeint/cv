@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en" class="no-js"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en" class="no-js"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en" class="no-js"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<title>CVilized Documentation</title>
+	<!-- Basic Page Needs
+  	================================================== -->
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->	
+	<link rel="shortcut icon" href="assets/images/favicon.png">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="assets/js/styles/shCore.css" rel="stylesheet" type="text/css" />
+  	<link href="assets/js/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div id="wrapper" class="container">
+
+	<!-- begin head and top -->
+	<div id="head" class="sixteen columns">		
+		<h1>CVilized Documentation by thedevelovers v1.0</h1>
+	</div>
+
+	<div id="top" class="sixteen columns">
+		<div class="doc-meta left four columns alpha">
+			<p>Created: 13/09/2013</p>
+			<p>By: thedevelovers</p>
+			<p>Email: <a href="mailto:contact@thedevelovers.com">contact@thedevelovers.com</a></p>		
+		</div>
+		<p class="welcome right twelve columns omega">
+		Thank you for purchasing CVilized, Timeline Style CV / Resume / vCard Template. By reading this documentation we hope you will get the most of its features. This template/theme is built with the latest Bootstrap 3 and SASS (with Compass). We recommend that you use SASS and Compass to customize the theme because it will be very easy since we have provided variables to change the color, font and others. If you have any questions that are beyond the scope of this help file, please feel free to contact us via email. Thank you.
+		</p>
+	</div>
+	<!-- end head and top -->
+		
+	<!-- begin content -->
+	<div id="bottom" class="sixteen columns">
+		<h2><a name="toc">Table of Contents</a></h2>
+		<!-- begin toc -->
+		<ol class="toc level1">
+			<li><a href="#a">HTML Structure</a></li>
+			<li><a href="#b">Hero Unit</a>
+				<ol class="toc level2">
+					<li><a href="#b1">Change Full-Screen Background Image</a></li>
+					<li><a href="#b1">Change Avatar Image</a></li>
+				</ol>
+			</li>
+			<li><a href="#c">Main Content</a>
+				<ol class="toc level2">
+					<li><a href="#c1">About Me</a></li>
+					<li><a href="#c2">Resume</a></li>
+					<li><a href="#c3">Projects</a></li>													
+					<li><a href="#c4">Contacts</a></li>				
+					<li><a href="#c5">Footer</a></li>
+				</ol>
+			</li>
+			<li><a href="#d">CSS and SASS (Compass)</a>
+				<ol class="toc level2">
+					<li><a href="#d1">Why Customizing With SASS?</a></li>
+					<li><a href="#d2">SASS File Structure</a></li>
+					<li><a href="#d3">Easy Customizing With SASS</a></li>					
+				</ol>
+			</li>
+			<li><a href="#e">Javascript</a></li>			
+			<li><a href="#f">Sources and Credits</a></li>
+		</ol>
+		<!-- end toc -->
+
+		<!-- begin main documentation content -->
+		<div class="explanation">
+			<div class="topic">
+				<h2><a name="a">A.) HTML Structure</a> <span class="to-toc">- <a href="#toc">top</a></span></h2>
+				<p>This template uses HTML5 as its structure and Twitter Bootstrap 3, it has maximum width 1170px. Generally the page layout can be depicted in the below illustration block.</p>
+				<div class="block">
+					<strong>.nav (navigation)</strong>
+					<p>This theme uses fixed top navigation with scrollspy and smooth scrolling feature.</p>
+				</div>
+				<div class="block">
+					<strong>.jumbotron / .header (as hero unit)</strong>
+					<p>Header contains full-screen background image as CSS background. This area is divided into two columns:</p>
+					<div class="block"><strong>.left</strong><p>Avatar, you can change the avatar image with yours here.</p></div>
+					<div class="block"><strong>.right</strong><p>Introduction, provide brief personal message and action button to read more about your resume or simply download the vCard.</p></div>
+				</div>				
+				<div class="block">
+					<strong>section .about-me</strong>
+					<p>Includes story paragraph, four columns of interests (it can be anything) and social icons.</p>
+					<div class="block"><strong>p</strong><p>More detail about your story</p></div>
+					<div class="block"><strong>.interest</strong><p>List of your interests and provide brief story.</p></div>
+					<div class="block"><strong>.social</strong><p>List of social icons which visitor can follow.</p></div>
+				</div>
+				<div class="block">
+					<strong>section .resume</strong>
+					<p>This is where the timeline style of your resume placed. You can also provide paragraph before the timeline following the other section area. The resume uses unordered list (ul) for SEO optimizing.</p>
+					<div class="block"><strong>ul.timeline</strong><p>Timeline style resume.</p></div>
+				</div>
+				<div class="block">
+					<strong>section .projects</strong>
+					<p>This section is used to show off your portfolio.</p>
+					<div class="block"><strong>p</strong><p>A paragraph or more of information for visitor</p></div>
+					<div class="block">
+						<strong>ul.project-grid.project-effect-shrink</strong>
+						<p>List of your project item information, includes screenshot, project title, brief explanation and link to the detail of the corresponding project.</p>
+					</div>
+				</div>
+				<div class="block">
+					<strong>section .contacts</strong>
+					<p>Includes google map, contact form and line of address information.</p>
+					<div class="block"><strong>.google-map</strong><p>Map area, provided by Google</p></div>
+					<div class="block">
+						<strong>.contact-address</strong>
+						<p>This area is divided into two columns for contact form and line of address</p>
+						<div class="block">
+							<strong>.contact-form</strong><p>Working contact form with validation accross browser.</p>
+						</div>
+						<div class="block">
+							<strong>.address-lines</strong><p>Your complete address here along with mobile number and email.</p>
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<strong>footer</strong>
+					<p>Centered copyright information</p>
+				</div>
+				<p class="to-top"><a href="#toc">Go to Top</a></p>
+			</div>
+			<div class="topic">
+				<h2><a name="b">B.) Hero Unit</a> <span class="to-toc">- <a href="#toc">top</a></span></h2>
+				<p>Hero unit has full-screen background image that will catch your visitor attention. It's divided into to columns, avatar on the left and brief introduction on the right.</p>
+				<ol class="topic level2">
+					<li>
+						<h3><a name="b1">B1.) Change Full-Screen Background Image</a></h3>
+						<strong>For non-SASS Users:</strong>
+						<ol>
+							<li>Put your new background image at <em>/assets/img/</em> directory</li>
+							<li>Open <em>/assets/css/main.css</em></li>
+							<li>On the current opened file, search <em>.jumbotron</em> that as <em>background-image</em> style</li>
+							<li>Change the file name with your image file name, leave the <em>'../img/'</em> since you've placed your new image on that directory on step 1</li>
+						</ol>
+						<p><strong>For SASS Users (recommended):</strong> Please go to <a href="file:///Users/tedikurniadi/Documents/Bootstrap/resume/CVilized/documentation/index.html#d3">Easy Customizing With SASS</a></p>
+					</li>
+					<li>
+						<h3><a name="b2">B2.) Change Avatar Image</a></h3>						
+						<ol>
+							<li>Put your new avatar image at <em>/assets/img/</em> directory</li>
+							<li>Open <em>index.html</em></li>
+							<li>On the current opened file, search <em>jumbotron</em>. You will get the HTML block as below:
+								<script type="syntaxhighlighter" class="brush: html">
+								<![CDATA[
+									<!-- header -->
+									<header class="jumbotron header" id="header">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-6 left">
+													<div class="avatar">
+														<img src="assets/img/profile-picture.png" class="img-responsive" alt="Profile Picture" />
+													</div>
+												</div>
+												<div class="col-md-6 right">
+													<h1 class="hide">BOB SMITH</h1>
+													<h2 class="heading">HELLO, IM BOB</h2>
+													<p>A web designer from New York. Want to know more about me?</p>
+													<a href="#about-me" class="btn btn-default btn-lg">READ MORE</a><a href="#" class="btn btn-primary btn-lg">DOWNLOAD vCARD</a>
+												</div>
+											</div>
+										</div>
+									</header>
+									<!-- end header -->
+								]]>
+								</script>
+							</li>
+							<li>Change the file name <em>profile-picture.png</em> with your image file name, leave the <em>'assets/img/'</em> since you've placed your new image on that directory on step 1</li>
+						</ol>
+					</li>
+				</ol>
+				<p class="to-top"><a href="#toc">Go to Top</a></p>				
+			</div>
+			<div class="topic">
+				<h2><a name="c">C.) Main Content</a> <span class="to-toc">- <a href="#toc">top</a></span></h2>
+				<ol class="topic level2">
+					<li><h3><a name="c1">C1.) About Me</a></h3>
+					<p>This section includes introduction paragraph about yourself, the four-columns additional information such as your interests. On the last part, let visitor follow you on social media by providing the links to corresponding social media icons.</p>
+
+					<p>To customize the social media icons, go to HTML block as below. Your icon isn't listed? Go to <a href="http://fortawesome.github.io/Font-Awesome/icons/">http://fortawesome.github.io/Font-Awesome/icons/</a>. Find your icon and provide the <em>icon-*</em> to the class attribute.</p>
+					<script type="syntaxhighlighter" class="brush: html">
+    				<![CDATA[
+    					<div class="social">
+							<h3 class="sub-heading">Follow me on:</h3>
+							<ul class="social-icons">
+								<li><a href="#"><i class="icon icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon icon-google-plus"></i></a></li>
+								<li><a href="#"><i class="icon icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon icon-dribbble"></i></a></li>
+							</ul>
+						</div>
+					]]>
+					</script>
+					</li>
+					<li><h3><a name="c2">C2.) Resume</a> <span class="to-toc">- <a href="#toc">top</a></span></h3>
+					<p>This is probably the heart of the template where you let visitor know about your resume. The skeleton for this timeline styled resume is relatively simple as below:</p>
+					<script type="syntaxhighlighter" class="brush: html">
+    				<![CDATA[
+						<ul>
+							<li class="year">2013</li>
+							<li class="event">
+								<h3>YOUR HEADING TITLE</h3>
+								<span class="month"><i class="icon icon-calendar"></i>September 2007 - present</span>
+								<p>Tell the story, you can add image or other media here</p>
+							</li>
+							<li class="event">
+								<h3>YOUR HEADING TITLE 2</h3>
+								<span class="month"><i class="icon icon-calendar"></i>January 2007 - September 2007</span>
+								<p>Just another story</p>
+							</li>
+							<li>2006</li> <!-- change year -->
+							<li class="event">
+								<h3>YOUR HEADING TITLE 3</h3>
+								<span class="month"><i class="icon icon-calendar"></i>October 2006 - December 2006</span>
+								<p>The story at 2006</p>
+							</li>
+						</ul>
+					]]>
+    				</script>
+					
+    				Add year marker at the element with <em>class="year"</em> and add the content inside the <em>class="event"</em>
+
+					</li>
+					<li><h3><a name="c3">C3.) Projects</a> <span class="to-toc">- <a href="#toc">top</a></span></h3>
+					<p>The project showcase is mainly divided into two columns. To do customizing, you need to edit the following HTML block.</p>
+					<script type="syntaxhighlighter" class="brush: html">
+    				<![CDATA[
+    					<ul class="project-grid project-effect-shrink">
+    						<!-- begin project item 1 -->
+							<li class="col-md-6">
+								<figure>
+									<img src="assets/img/projects/big-thing-landing-page.png" alt="Big Thing Landing Page"/>
+									<figcaption>
+										<div class="project-item-info">
+											<h3 class="sub-heading">Big Thing Landing Page</h3>
+											<p>Progressively pursue visionary functionalities through vertical ROI. Uniquely unleash alternative experiences vis-a-vis.</p>
+											<a href="#" class="btn btn-default">View Details</a>
+										</div>
+									</figcaption>
+								</figure>
+							</li>
+							<!-- end project item 1 -->
+							<!-- begin project item 2 -->
+							<li class="col-md-6">
+								<figure>
+									<img src="assets/img/projects/tiick-tock-coming-soon-page.png" alt="Tiick Tock Coming Soon Page"/>
+									<figcaption>
+										<div class="project-item-info">
+											<h3 class="sub-heading">Tiick Tock Coming Soon Page</h3>
+											<p>This is a short description of the project</p>
+											<a href="#" class="btn btn-default">View Details</a>
+										</div>
+									</figcaption>
+								</figure>
+							</li>
+							<!-- end project item 2 -->
+						</ul>
+    				]]>
+    				</script>
+
+    				<p>Each project item will have screenshot image, sub-heading as project title and brief explanation of the project. You also can add link to the detail information to the corresponding project item. <strong>Recommended image size: 800x456 px</strong></p>
+    				
+					</li>								
+					<li><h3><a name="c4">C4.) Contacts</a> <span class="to-toc">- <a href="#toc">top</a></span></h3>
+					<p>This section provides google map of your location, contact form and line of address. Note that the contact form is working with PHP, so if you put the template to the PHP enabled hosting it will work and send visitor message to your email.</p>
+					<p><em>How to change address on the google map?</em></p>
+					<p>Please open file <em>assets/js/main.js</em> and find the code below:</em></p>
+					<script type="syntaxhighlighter" class="brush: js">
+						<![CDATA[
+							// google maps 
+							if( $('.map-canvas').length > 0) {
+								
+								var geocoder = new google.maps.Geocoder();
+								var address = 'Google New York, 76 Ninth Ave, New York, NY, USA'; // change it with your address
+								var contentString = '<div class="map-detail"><strong>Our Office:</strong><p>' + address + '</p></div>';
+								
+								geocoder.geocode({'address': address }, function(results, status) {
+									if(status == google.maps.GeocoderStatus.OK) { 
+										var latitude = results[0].geometry.location.lat();
+										var longitude = results[0].geometry.location.lng();
+
+										jQuery('.map-canvas').gmap().bind('init', function(ev, map) {
+											jQuery('.map-canvas').gmap('addMarker', {'position': latitude+','+longitude, 'bounds': true}).click(function() {
+												jQuery('.map-canvas').gmap('openInfoWindow', {'content': contentString}, this);
+											});
+											jQuery('.map-canvas').gmap('option', 'zoom', 8);
+										});
+									}else { alert('Google Maps had some trouble finding the address. Status: ' + status); }
+								});
+								
+							}
+						]]>
+					</script>
+					Change the map location by providing your address to the variable <em>address</em>
+
+					<p><em>How to change email destination for my contact form?</em></p>
+					<p>You can change where visitor message should be emailed by providing email address. Open file <em>contact.php</em> and find code below: </em></p>
+					<script type="syntaxhighlighter" class="brush: js">
+    				<![CDATA[
+
+    					$emailTo = 'youremail@domain.com';
+						$subject = 'New Submitted Message From: ' . $name;
+						$body = "Name: $name \n\nEmail: $email \n\nMessage: $message";
+						$headers = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
+
+						mail($emailTo, $subject, $body, $headers);
+				        
+				        $message = 'Thank you ' . $name . ', your message has been submitted.';
+						$result = true;
+
+    				]]>
+    				</script>
+    				<p>Provide your email address to the variable <em>$emailTo</em>. Actually you can also edit the others such as subject and response message for the visitors once they successfuly submitted their message.</p>
+					</li>				
+					<li><h3><a name="c5">C5.) Footer</a> <span class="to-toc">- <a href="#toc">top</a></span></h3>
+					<p>The footer area provides copyright or other miscellaneous information. Actually it's very simple as below.</p>
+					<script type="syntaxhighlighter" class="brush: html">
+    				<![CDATA[
+    					<!-- footer -->
+						<footer class="footer">
+							<p>Copyright 2013 The Develovers. All Rights Reserved.</p>
+						</footer>
+						<!-- end footer -->
+    				]]>
+    				</script>
+					</li>
+				</ol>
+				<p class="to-top"><a href="#toc">Go to Top</a></p>
+			</div>			
+			<div class="topic">
+				<h2><a name="d">D.) CSS and SASS (Compass)</a> <span class="to-toc">- <a href="#toc">top</a></span></h2>
+				<p>This template is built with SASS, means that the CSS file located in <em>/assets/css/main.css</em> is generated by the compiler instead of manually written. We recommend that you use SASS to customize this template, it will be quick and fast. However you can also customizing the template without SASS by directly editing the file <em>/assets/css/main.css</em></p>
+				<ol class="topic level2">
+					<li>
+						<h3><a name="d1">D1.) Why Customizing With SASS?</a></h3>
+						Let's put a simple definition about SASS, it allows us to create programmable stylesheet (CSS). This theme use <em>.scss</em> file to be compiled into <em>.css</em>, so you don't write <em>.css</em> directly. This guide only cover <a href="http://sass-lang.com/#variables">SASS variables</a> used in the theme, such as color and font. Then what is Compass? Let's say it extends the functionality of SASS. For further information, please go to the official website of <a href="http://sass-lang.com/">SASS</a> and <a href="http://compass-style.org/">Compass</a>.
+					</li>
+					<li>
+						<h3><a name="d2">D2.) SASS File Structure</a></h3>
+						<p>You will find all the <em>.scss</em> file under <em>sass</em> directory. It has strucuture as below: </p>
+						<ul class="file-structure">
+							<li>main.scss</li>
+							<li>/modules/ <br/>
+								<ul>
+									<li>_mixin.scss</li>
+									<li>_variables.scss</li>
+								</ul>
+							</li>
+							<li>/partials/ <br/>
+								<ul>
+									<li>_about-me.scss</li>
+									<li>_base.scss</li>
+									<li>_contacts.scss</li>
+									<li>_footer.scss</li>
+									<li>_header.scss</li>
+									<li>_navigation.scss</li>
+									<li>_projects.scss</li>
+									<li>_resume.scss</li>
+								</ul>
+							</li>
+							<li>/vendor/ <br/>
+								<ul>
+									<li>_bootstrap.scss</li>
+									<li>_font-awesome.scss</li>
+									<li>_timeline.scss</li>
+								</ul>
+							</li>
+						</ul>
+						<p><em>/modules/_variables.scss</em>: hold all variables used in this template, such as base font color, section background color, base font family and many more. You need to change the variables value in this file to customize the template with your chosen color, font, background image etc.</p>
+						<p><em>/partials/</em>: each <em>.scss</em> file (except <em>_base.scss</em>) in this directory provides style for each section of the template such as Navigation, Header, About Me and so on. The file name is self-explanatory, so you can easily find the appropriate file for certain style</p>
+						<p><em>/partials/_base.css</em>: this file is used to define general styles applied to the whole template such as body, link, icon and other general styles.</p>
+						<p><em>/vendor/</em>: includes all the 3rd party files or libraries. You shouldn't change the content of the files or remove the files in this directory. Somehow, you can add another 3rd party files necessary for your customization in this directory.</p>
+					</li>
+					<li>
+						<h3><a name="d3">D3.) Easy Customizing With SASS</a></h3>
+						<p>To enable SASS and Compass you need to install them first. Note that installing Compass will install SASS too. Here's <a href="http://compass-style.org/install/">the documentation for installing Compass on Mac</a>. For Windows users, please read this post <a href="http://www.impressivewebs.com/sass-on-windows/">Setting Up Sass on Windows</a> (you only need to install Compass to get both of SASS and Compass installed on your PC)</p>
+						<p>Assume that you have successfuly running SASS on your Mac or PC, then to customize the template you only need to change the necessary variables at <em>/sass/modules/_variables.css</em>. You will find the code as below: </p>
+						<script type="syntaxhighlighter" class="brush: css">
+							<![CDATA[
+								// ------------------------------------------------ //
+								//	Variables
+								// ------------------------------------------------ //
+
+								/* main colors */
+								$primary-accent-color: #cf5037;
+								$secondary-accent-color: #2067CA;
+
+								$base-font-color-dark: #3c3c3c;
+								$base-font-color-light: #fff;
+								$base-heading-font-color: #bc341b;
+								$base-subheading-font-color: #333;
+								$base-button-font-color: #fff;
+								$base-icon-color: #aea08b;
+
+								$main-nav-font-color: #fff;
+								$hero-font-color: #fff;
+
+								$about-me-bg-color: #ffe9c8;
+								$resume-bg-color: #f4debe;
+								$projects-bg-color: #000000;
+								$contacts-bg-color: #eed9b8;
+
+								/* fonts */
+								$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+								$base-font-size: 14px;
+								$secondary-font-family-bold: "Josefin Slab Bold";
+								$secondary-font-family-light: "Josefin Slab Light";
+
+								/* form */
+								$base-field-bg-color: #f2f2f2;
+								$base-field-font-color: #a18f72;
+
+								/* header */
+								$hero-img-background: "hero-bg.png";
+
+								/* timeline */
+								$bg-line-url: 'vertical-line.png'; // the vertical line of the timeline
+
+								/* google map */
+								$map-height: 400px;
+							]]>
+						</script>
+						<p>You can change the primary color, secondary color, base font color and each section background color etc by providing valid hex color value to the corresponding variables. Go ahead and do an experiment for each variable value and see the result.</p>
+						<strong>I want to change the font.</strong>
+						<p>First you need to upload the webfont to the directory <em>/assets/fonts/</em>. Then open file <em>/partials/_base.scss</em> and find the code similar as below:</p>
+						<script type="syntaxhighlighter" class="brush: css">
+							<![CDATA[
+
+							@include font-face($secondary-font-family-bold, font-files(	
+								"josefinslab-bold-webfont.svg",
+								"josefinslab-bold-webfont.ttf",
+								"josefinslab-bold-webfont.woff"
+								), "josefinslab-bold-webfont.eot");
+
+							]]>
+						</script>
+						<p>Provide the file name for each webfont file extension such as .svg, .ttf. woff and .eot. On the <em>_variables.scss</em> determine if the font should be a <em>$base-font-family</em>, <em>$secondary-font-family-bold</em> or <em>$secondary-font-family-light</em>. If you don't have or don't want the bold/light version of your webfont, just give the same value to each other. Just make sure both of the variables has a value.</p>
+						<strong>I want to change the background image on the header/hero-unit.</strong>
+						<p>Upload the image to the directory <em>/assets/img/</em>, on the <em>_variables.scss</em> find the variable <em>$hero-img-background</em> and provide the file name of the image file without the directory name.</p>
+						<strong>I want to change the color of vertical line on the resume timeline</strong>
+						<p>Upload the image to the directory <em>/assets/img/</em>, on the <em>_variables.scss</em> find the variable <em>$bg-line-url</em> and provide the file name of the image file without the directory name.</p>
+					</li>					
+				</ol>
+
+				<p class="to-top"><a href="#toc">Go to Top</a></p>			
+			</div>
+			<div class="topic">
+				<h2><a name="e">E.) Javascript</a> <span class="to-toc">- <a href="#toc">top</a></span></h2>
+				<p>You can find all the javascript files in the <em>/assets/js/ directory</em>. Please note that the directory mainly consists of framework or plugin scripts. The only file that specific to the template and we can change is <em>main.js</em></p>
+				<p>What does <em>main.js</em> do?</p>
+				<ul>
+					<li>Initiate scrollspy. When you scroll the page, the main navigation is pointing to the menu based on your current scrolling position.</li>
+					<li>Initiate smooth page scrolling</li>
+					<li>Initiate google maps. Also, you should go to this initiation code to change the map address.</li>
+					<li>Cross-browser client-side form validation. This handle browser who doesn't have HTML5 validation.</li>
+					<li>Ajax contact form. Initiate and do ajax call to send the input data to the contact.php to be processed in the server side.</li>
+				</ul>
+				<p class="to-top"><a href="#toc">Go to Top</a></p>			
+			</div>			
+			<div class="topic">
+				<h2><a name="f">F.) Sources &amp; Credits</a> <span class="to-toc">- <a href="#toc">top</a></span></h2>
+				<p>This theme uses the following images, icons, CSS and jQuery plugin libraries.</p>
+				<p>Images:</p>
+				<ul>
+					<li>Hero Image Background &amp; Project Image Background - <a href="http://unsplash.com">http://unsplash.com</a> by <a href="http://madebyvadim.com/">http://madebyvadim.com/</a></li>
+					<li>Avatar by Ivan McClellan Photography - <a href="http://www.flickr.com/photos/31269250@N04/8512846447/sizes/o/in/photostream/">http://www.flickr.com/photos/31269250@N04/8512846447/sizes/o/in/photostream/</a></li>
+				</ul>
+				<p>Icons:</p>
+				<ul>
+					<li>Font Awesome - <a href="http://fortawesome.github.io/Font-Awesome/icons/">http://fortawesome.github.io/Font-Awesome/icons/</a></li>					
+				</ul>
+				<p>CSS:</p>
+				<ul>
+					<li>Timeline - <a href="http://christian-fei.com/simple-vertical-timeline-with-css/">http://christian-fei.com/simple-vertical-timeline-with-css/</a></li>
+				</ul>			
+				<p>jQuery:</p>
+				<ul>
+					<li>jQuery Validation Plugin - <a href="http://docs.jquery.com/Plugins/Validation">http://docs.jquery.com/Plugins/Validation</a></li>					
+					<li>jQuery ScrollTo and LocalScroll - <a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html">http://flesler.blogspot.com/2007/10/jqueryscrollto.html</a></li>
+				</ul>
+				<p class="to-top"><a href="#toc">Go to Top</a></p>
+			</div>
+		</div>
+		<!-- end main documentation content -->
+	</div>
+	<!-- end content -->
+	<p>Once again, thank you so much for purchasing this theme. We would be glad to help you if you have any questions relating to this template.</p>
+	<br/>
+	<p>The Develovers</p>
+	<p><a href="#top">Go To Table of Contents</a></p>
+</div>
+<!-- end wrapper -->
+
+
+	<script type="text/javascript" src="assets/js/jquery-1.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/scripts/shCore.js"></script>
+	<script type="text/javascript" src="assets/js/scripts/shAutoloader.js"></script>
+	<script type="text/javascript" src="assets/js/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="assets/js/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="assets/js/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">
+	   SyntaxHighlighter.all();
+	   
+	   $(document).ready(function(){
+	     $('h3.numerate').each(function(i, element){
+	       $('strong', element).prepend(String.fromCharCode(65 + i) + ') ');
+	       $(element).attr('id', 'section-' + (i+1));
+	     });
+	     
+	     $('ol.alpha li').each(function(i, element){
+	       if ($('a', element).attr('href') == '#' || $('a', element).attr('href') == '') {
+	        $('a', element).attr('href', '#section-' + (i+1));  
+	       }
+	     });
+	   });
+	</script>
+
+</body>
+</html>

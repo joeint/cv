@@ -1,0 +1,26 @@
+{
+    "overallDesc" : "Describe below are some of the major projects that I was involved in.  In all of the examples, I was responsible for creating the new systems.",
+    "projects":
+    [
+        {
+            "icon": "fa-bar-chart-o",
+            "iconDesc": "Trading System",
+            "projectDesc": "New order management system for the fixed income division.  The system was responsible for trading algorithms, trade compliance, trade confirmation, and trade reconciliation."
+        },
+        {
+            "icon": "fa-exchange",
+            "iconDesc": "Trade Routing System",
+            "projectDesc": "The trade routing system was to increase increase the efficiency of the straight through processing time.  By routing trades from their trading systems to it's respective accounting systems."
+        },
+        {
+            "icon": "fa-home",
+            "iconDesc": "Mortgage Forecasting",
+            "projectDesc": "The mortgage forecasting tool was to model portfolios risk and exposure to the housing market.  It ran through statistical models to forecast the future trends of the portfolio."
+        },
+        {
+            "icon": "fa-th",
+            "iconDesc": "Enterprise Data",
+            "projectDesc": "Created a single version of truth database by consolidating many databases that contain similar data.  Created an api into the svot database through web services, ftp, and messaging."
+        }
+    ]
+}
