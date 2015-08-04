@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('joeintApp', []);
+angular.module('joeintApp', ['duScroll', 'ui.bootstrap']);
 //  'ngCookies',
 //  'ngResource',
 //  'ngSanitize',

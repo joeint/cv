@@ -1,11 +1,11 @@
 {
-    "overallDesc" : "Describe below are some of the major projects that I was involved in.  In all of the examples, I was responsible for creating the new systems.",
+    "overallDesc" : "Listed below are some of my major accomplishments.  I was responsible for designing and coding each system.",
     "projects":
     [
         {
             "icon": "fa-bar-chart-o",
             "iconDesc": "Trading System",
-            "projectDesc": "New order management system for the fixed income division.  The system was responsible for trading algorithms, trade compliance, trade confirmation, and trade reconciliation."
+            "projectDesc": "Created a order management system for the fixed income division.  The system was responsible for trading algorithms, trade compliance, trade confirmation, and trade reconciliation."
         },
         {
             "icon": "fa-exchange",
@@ -21,6 +21,16 @@
             "icon": "fa-th",
             "iconDesc": "Enterprise Data",
             "projectDesc": "Created a single version of truth database by consolidating many databases that contain similar data.  Created an api into the svot database through web services, ftp, and messaging."
+        },
+        {
+            "icon": "fa-bolt",
+            "iconDesc": "Investor Studio",
+            "projectDesc": "Investor studio is an investment platform to generate alpha for our fixed income portfolio managers."
+        },
+        {
+            "icon": "fa-user",
+            "iconDesc": "This Site",
+            "projectDesc": "This website was written using AngularJS, Bootstrap, Bower, CSS 3, Font Awesome, HTML5, Javascript, and Grunt.  The website utilizes a JavaScript MV* framework, code minification, and cache busting."
         }
     ]
 }

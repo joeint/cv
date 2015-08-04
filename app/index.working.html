@@ -4,281 +4,169 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en" class="no-js"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-    <title>CVilized - Timeline Style CV / Resume / vCard Bootstrap Template</title>
+    <title>Joe Intrakamhang</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Timeline Style CV / Resume / vCard Bootstrap Template.">
-    <meta name="author" content="The Develovers">
+    <meta name="description" content="Joe Int's Site">
+    <meta name="author" content="Joe Intrakamhang">
+    <meta name="keywords" content="Joe Intrakamhang, Intrakamhang, finance, developer, java, angular, angularjs, javascript, trading, bootstrap, ui, algorithm">
+    <meta name="google-site-verification" content="yg0QNoEqJEIhbxNTB5FCuHqSkaUvK0ZBmjm3btxkRoM" />
 
     <!-- CSS -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
     <link href="styles/main.css" media="screen, projection" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- endbuild -->
+
 
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="images/favicon.png">
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-48081533-1', 'joeint.com');
+        ga('send', 'pageview');
+
+    </script>
 </head>
 <body ng-app="joeintApp" ng-controller="MainCtrl" data-spy="scroll" data-target="#main-nav">
 <!-- WRAPPER -->
 <div class="wrapper">
 
-<!-- main navigation -->
-<nav class="navbar navbar-default navbar-fixed-top" id="main-nav" role="navigation">
-    <div class="container">
-        <!-- brand and toggle -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav-collapse">
-                <span class="sr-only">Toggle Navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
+    <!-- main navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="main-nav" role="navigation">
+        <div class="container">
+            <!-- brand and toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
 
-        <!-- navigation links -->
-        <div class="collapse navbar-collapse main-nav-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="#about-me">ABOUT ME</a></li>
-                <li><a href="#resume">RESUME</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contacts">CONTACTS</a></li>
-            </ul>
+            <!-- navigation links -->
+            <div class="collapse navbar-collapse main-nav-collapse">
+                <ul class="nav navbar-nav">
+                    <!--<li><a href="#about-me">ABOUT ME</a></li>-->
+                    <li><a href="#about-me" du-smooth-scroll duration="1500">ABOUT ME</a></li>
+                    <li><a href="#resume" du-smooth-scroll  duration="1500">RESUME</a></li>
+                    <li><a href="#projects" du-smooth-scroll  duration="1500">PROJECTS</a></li>
+                    <li><a href="#contact-me" du-smooth-scroll  duration="1500">CONTACT ME</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
-<!-- end main navigation -->
+    </nav>
+    <!-- end main navigation -->
 
-<!-- header -->
-<header class="jumbotron header" id="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 left">
-                <div class="avatar">
-                    <img ng-src="images/{{profileImg}}" class="img-responsive" alt="Profile Picture" />
+    <!-- header -->
+    <header class="jumbotron header" id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left">
+                    <div class="avatar">
+                        <img ng-src="images/{{profileImg}}" class="img-responsive" alt="Profile Picture" />
+                    </div>
+                </div>
+                <div class="col-md-6 right">
+                    <h1 class="hide">Joe I</h1>
+                    <h2 class="heading">HELLO, I'M JOE</h2>
+                    <p>A programming <label>Geek</label> from Chicago. Want to know more about me?</p>
+                    <a href="#about-me" du-smooth-scroll duration="1500" class="btn btn-default btn-lg">READ MORE</a><a href="resume/Resume%20Joe%20Intrakamhang.pdf" class="btn btn-primary btn-lg" download> DOWNLOAD RESUME </a>
                 </div>
             </div>
-            <div class="col-md-6 right">
-                <h1 class="hide">Joe I</h1>
-                <h2 class="heading">HELLO, I'M JOE</h2>
-                <p>A technologist <label>Geek</label> from Chicago. Want to know more about me?</p>
-                <a href="#about-me" class="btn btn-default btn-lg">READ MORE</a><a href="resume/Resume%20Joe%20Intrakamhang.pdf" class="btn btn-primary btn-lg" download>DOWNLOAD RESUME</a>
+            <br>
+            <p class="text-center font-very-small">Site written using AngularJS, Bootstrap, Bower, Font Awesome, and Grunt.</p>
+        </div>
+    </header>
+    <!-- end header -->
+
+
+    <!-- about-me -->
+    <section class="section about-me" id="about-me">
+        <div class="container">
+            <h2 class="heading">ABOUT ME</h2>
+            <p>{{aboutMe.line1}}</p>
+            <p>{{aboutMe.line2}}</p>
+            <br>
+            <div class="social">
+                <h3 class="sub-heading">Follow me on:</h3>
+                <ul class="social-icons">
+                    <li><a href="http://www.linkedin.com/pub/joe-intrakamhang/3/636/366" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+                </ul>
             </div>
         </div>
-    </div>
-</header>
-<!-- end header -->
+    </section>
+    <!-- end about-me -->
 
-
-<!-- about-me -->
-<section class="section about-me" id="about-me">
-    <div class="container">
-        <h2 class="heading">ABOUT ME</h2>
-        <p>Monotonectally conceptualize go forward relationships and effective paradigms. Uniquely build team building convergence rather than progressive manufactured products. Quickly build professional web services through cross functional vortals. Synergistically transform functionalized e-markets through performance based human capital. Energistically engage global core competencies vis-a-vis superior architectures.</p>
-        <p>Holisticly foster process-centric core competencies whereas impactful meta-services. Seamlessly evisculate accurate leadership vis-a-vis highly efficient users. Authoritatively grow multifunctional action items and competitive processes. Collaboratively maximize resource sucking.</p>
-        <div class="row interest">
-            <div class="col-md-3">
-                <h3 class="sub-heading"><span class="glyphicon glyphicon-headphones"></span> Music</h3>
-                <p>Efficiently revolutionize one-to-one potentialities before B2B models. Continually leverage other's resource-leveling niche markets whereas focused processes. Distinctively transition high standards in total linkage.</p>
-            </div>
-            <div class="col-md-3">
-                <h3 class="sub-heading"><span class="glyphicon glyphicon-film"></span> Movies</h3>
-                <p>Holisticly pursue pandemic services before distributed experiences. Collaboratively envisioneer just in time niches before ubiquitous e-services. Appropriately enable scalable e-business with leveraged opportunities.</p>
-            </div>
-            <div class="col-md-3">
-                <h3 class="sub-heading"><span class="glyphicon glyphicon-briefcase"></span> Traveling</h3>
-                <p>Authoritatively transition global web services vis-a-vis user-centric content. Rapidiously innovate principle-centered resources via intuitive models. Monotonectally integrate collaborative core competencies before best-of-breed potentialities.</p>
-            </div>
-            <div class="col-md-3">
-                <h3 class="sub-heading"><span class="glyphicon glyphicon-book"></span> Books</h3>
-                <p>Holisticly restore resource-leveling methodologies rather than distinctive e-services. Seamlessly whiteboard unique quality vectors via functionalized catalysts for change. Enthusiastically embrace proactive outsourcing through.</p>
-            </div>
-        </div>
-        <div class="social">
-            <h3 class="sub-heading">Follow me on:</h3>
-            <ul class="social-icons">
-                <li><a href="#"><i class="icon icon-facebook"></i></a></li>
-                <li><a href="#"><i class="icon icon-twitter"></i></a></li>
-                <li><a href="#"><i class="icon icon-google-plus"></i></a></li>
-                <li><a href="#"><i class="icon icon-linkedin"></i></a></li>
-                <li><a href="#"><i class="icon icon-dribbble"></i></a></li>
-            </ul>
-        </div>
-    </div>
-</section>
-<!-- end about-me -->
-
-<!-- resume -->
-<section class="section resume" id="resume">
-    <div class="container">
-        <h2 class="heading">RESUME</h2>
-        <ul class="timeline">
-            <div class="history" ng-repeat="item in history">
-                <li class="year">{{item.endDate}}</li>
-                <li class="event" ng-class-even="'left-side'">
-                    <h3 class="company">{{item.company}}</h3>
-                    <h3 class="heading">{{item.title}}</h3>
-                    <span class="month"><i class="icon icon-calendar"></i>{{item.startDate}} - {{item.endDate}}</span>
-                    <p>{{item.desc}}</p>
-                </li>
-            </div>
-            <!--<li class="year">Current</li>-->
-            <!--<li class="event">-->
-                <!--<h3 class="company">Neuberger Berman</h3>-->
-                <!--<h3 class="heading">Solutions Architect, VP</h3>-->
-                <!--<span class="month"><i class="icon icon-calendar"></i>2011 - present</span>-->
-                <!--<p>Dramatically reconceptualize diverse imperatives whereas out-of-the-box manufactured products. Dynamically negotiate seamless data via proactive ideas. Globally seize revolutionary imperatives rather than standardized niches.</p>-->
-            <!--</li>-->
-            <!--<li class="year">2011</li>-->
-            <!--<li class="event">-->
-                <!--<h3 class="company">Neuberger Berman</h3>-->
-                <!--<h3 class="heading">Technical Lead, AVP</h3>-->
-                <!--<span class="month"><i class="icon icon-calendar"></i>2008 - 2011</span>-->
-                <!--<p>Dynamically procrastinate proactive methodologies and multimedia based materials. Phosfluorescently incentivize magnetic leadership skills before inexpensive users.</p>-->
-            <!--</li>-->
-            <!--<li class="year">2008</li>-->
-            <!--<li class="event">-->
-                <!--<h3 class="company">Lehman Brothers</h3>-->
-                <!--<h3 class="heading">Senior Developer</h3>-->
-                <!--<span class="month"><i class="icon icon-calendar"></i>2006 - 2008</span>-->
-                <!--<p>Globally transition unique solutions vis-a-vis dynamic niche markets. Interactively recaptiualize superior leadership without end-to-end catalysts for change. Globally extend worldwide data without quality. Efficiently disseminate premium markets for strategic initiatives. Completely orchestrate effective e-business and unique partnerships.</p>-->
-            <!--</li>-->
-            <!--<li class="year">2006</li>-->
-            <!--<li class="event">-->
-                <!--<h3 class="company">Northern Trust</h3>-->
-                <!--<h3 class="heading">Senior Systems Analyst</h3>-->
-                <!--<span class="month"><i class="icon icon-calendar"></i>2005 - 2006</span>-->
-                <!--<p>Globally transition unique solutions vis-a-vis dynamic niche markets. Interactively recaptiualize superior leadership without end-to-end catalysts for change. Globally extend worldwide data without quality. Efficiently disseminate premium markets for strategic initiatives. Completely orchestrate effective e-business and unique partnerships.</p>-->
-                <!--<figure>-->
-                    <!--<img src="images/skills.png" alt="Skills" />-->
-                <!--</figure>-->
-            <!--</li>-->
-            <!--<li class="year">2005</li>-->
-            <!--<li class="event">-->
-                <!--<h3 class="company">Caremark</h3>-->
-                <!--<h3 class="heading">Programmer Analyst</h3>-->
-                <!--<span class="month"><i class="icon icon-calendar"></i>2002 - 2005</span>-->
-                <!--<p> Globally extend worldwide data without quality. Efficiently disseminate premium markets for strategic initiatives. Completely orchestrate effective e-business and unique partnerships.</p>-->
-            <!--</li>-->
-            <!--<li class="year">2002</li>-->
-        </ul>
-
-    </div>
-</section>
-<!-- end resume -->
-
-<!-- projects -->
-<section class="section projects" id="projects">
-    <div class="container">
-        <h2 class="heading">PROJECTS</h2>
-        <p>Intrinsicly mesh corporate partnerships with synergistic leadership skills. Uniquely negotiate high-payoff potentialities before premium niches. Progressively cultivate functional platforms after focused processes. Assertively supply emerging metrics before out-of-the-box internal or "organic".</p>
-        <div class="row project-list">
-            <ul class="project-grid project-effect-shrink">
-                <li class="col-md-6">
-                    <figure>
-                        <img src="images/big-thing-landing-page.png" alt="Big Thing Landing Page"/>
-                        <figcaption>
-                            <div class="project-item-info">
-                                <h3 class="sub-heading">Big Thing Landing Page</h3>
-                                <p>Progressively pursue visionary functionalities through vertical ROI. Uniquely unleash alternative experiences vis-a-vis.</p>
-                                <a href="#" class="btn btn-default">View Details</a>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="col-md-6">
-                    <figure>
-                        <img src="images/tiick-tock-coming-soon-page.png" alt="Tiick Tock Coming Soon Page"/>
-                        <figcaption>
-                            <div class="project-item-info">
-                                <h3 class="sub-heading">Tiick Tock Coming Soon Page</h3>
-                                <p>Appropriately engage functional potentialities for principle-centered customer service.</p>
-                                <a href="#" class="btn btn-default">View Details</a>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-<!-- end projects -->
-
-<!-- contacts -->
-<section class="section contacts" id="contacts">
-    <div class="container">
-        <h2 class="heading">CONTACTS</h2>
-        <p>Continually promote world-class methodologies through equity invested results. Monotonectally target stand-alone ideas via cross-media collaboration and idea-sharing. Seamlessly grow innovative markets.</p>
-        <div class="row google-map">
-            <div class="map-canvas"></div>
-        </div>
-        <div class="row contact-address">
-            <div class="col-md-6">
-                <div class="contact-form margin-bottom">
-                    <div class="alert"></div>
-                    <form method="post">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" value="" placeholder="your name*" required="required" data-val="true" data-placement="bottom">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" value="" placeholder="email address*" required="required" data-rule-email="true" data-val="true" data-placement="bottom">
-                        <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" value="" placeholder="please provide the subject">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" placeholder="your message here*" required="required" data-val="true" data-placement="bottom"></textarea>
-                        <input type="submit" value="Submit" class="btn btn-primary btn-lg" id="submit-button">
-                        <input type="hidden" name="msg-submitted" id="msg-submitted" value="true">
-                    </form>
+    <!-- resume -->
+    <section class="section resume" id="resume">
+        <div class="container">
+            <h2 class="heading">RESUME</h2>
+            <ul class="timeline">
+                <div class="history" ng-repeat="item in history">
+                    <li class="year">{{item.endDate}}</li>
+                    <li class="event" ng-class-even="'left-side'">
+                        <h3 class="company">{{item.company}}</h3>
+                        <h3 class="heading">{{item.title}}</h3>
+                        <span class="month"><i class="icon icon-calendar"></i>{{item.startDate}} - {{item.endDate}}</span>
+                        <p>{{item.desc}}</p>
+                    </li>
                 </div>
-            </div>
+            </ul>
 
-            <div class="col-md-6">
-                <p>Credibly matrix cross-unit best practices with enterprise-wide niches. Intrinsicly transform worldwide quality vectors vis-a-vis resource-leveling web services. Synergistically impact just in time alignments whereas prospective alignments.</p>
-                <div class="address-lines">
-                    <p>12345 North Main Street</p>
-                    <p>New York, 2233445</p>
-                    <p>Mobile: (1800) 765 - 4321</p>
-                    <p>Email: <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
+        </div>
+    </section>
+    <!-- end resume -->
+
+    <!-- projects -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="heading">PROJECTS</h2>
+            <p>{{project.overallDesc}}</p>
+            <div class="row interest">
+                <div class="col-md-3" ng-repeat="item in project.projects">
+                    <h3 class="sub-heading"><i class="fa {{item.icon}} fa-lg"></i> {{item.iconDesc}}</h3>
+                    <p>{{item.projectDesc}}</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- end contacts -->
+    </section>
+    <!-- end projects -->
 
-<!-- footer -->
-<footer class="footer">
-    <p>Copyright 2013 The Develovers. All Rights Reserved.</p>
-</footer>
-<!-- end footer -->
+    <!-- contacts -->
+    <section class="section contacts" id="contact-me">
+        <div class="container">
+            <h2 class="heading">CONTACT ME</h2>
+            <a href="mailto:joe@joeint.com" class="a-underline"><h3 class="heading">Click me to email me</h3></a>
+            <h4 class="heading">joe@joeint.com</h4>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p>Copyright {{currentYear}} Joe Intrakamhang. All Rights Reserved.</p>
+    </footer>
+    <!-- end footer -->
 
 </div>
 <!-- END WRAPPER -->
 
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
-<script src="bower_components/jquery/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/modernizr/modernizr.js"></script>
-<script src="bower_components/sass-bootstrap/dist/js/bootstrap.js"></script>
-<script src="bower_components/angular-resource/angular-resource.js"></script>
-<script src="bower_components/angular-cookies/angular-cookies.js"></script>
-<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-<script src="bower_components/angular-route/angular-route.js"></script>
-<script src="bower_components/jquery.scrollTo/jquery.scrollTo.js"></script>
-<script src="bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
-<script src="bower_components/jquery.localScroll/jquery.localScroll.js"></script>
-<script src="bower_components/jquery.localScroll/jquery.localScroll.min.js"></script>
+<script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
-<script src="scripts/main.js"></script>
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
 <!-- endbuild -->

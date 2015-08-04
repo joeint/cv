@@ -2,8 +2,15 @@
     {
         "company": "Neuberger Berman",
         "title": "Solutions Architect, VP",
-        "startDate": "2011",
+        "startDate": "2014",
         "endDate": "Present",
+        "desc": "Architect for the investor studio platform. Responsible for identifying alpha trading decisions, signal generation, code tuning and code modernization."
+    },
+    {
+        "company": "Neuberger Berman",
+        "title": "Solutions Architect, VP",
+        "startDate": "2011",
+        "endDate": "2014",
         "desc": "Architect for the enterprise data service organization. The division is a brand new organization unit within the firm. The EDS group is responsible to be the single version of truth for data. Responsible for setting new technology standards, code testing standards, and mentoring other groups to the new standards."
     },
     {
