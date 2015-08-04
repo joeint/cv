@@ -1,5 +1,8 @@
 ### Joe's Resume Site
 ---
+This site is built using Angular 1.2, Bootstrap theme 3.x, and Grunt 0.4.1.
+The purpose is to highlight my development skills.
+The deployed code should be a single minify/uglify css and js files.
 
 #### Running the site without minify/uglify
 ```
