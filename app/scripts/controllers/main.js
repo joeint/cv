@@ -7,7 +7,7 @@ function randomRange(minimum, maximum) {
 angular.module('joeintApp').controller('MainCtrl', function ($scope, $http) {
     // Pick between images 1 - 4 since only 4 images exists
     //
-    $scope.profileImg = 'joe' + randomRange(1, 6) + '.png';
+    $scope.profileImg = 'joe' + randomRange(1, 5) + '.png';
 
     $scope.myInterval = 3000;
     $scope.slides = [];
